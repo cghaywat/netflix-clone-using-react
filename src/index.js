@@ -7,10 +7,9 @@ import { firebase } from './lib/firebase.prod';
 import { FirebaseContext } from './context/firebase';
 
 render(
-    
     <FirebaseContext.Provider value={{ firebase }}>
         <GlobalStyles />
         <App />
-    </FirebaseContext.Provider>
+    </FirebaseContext.Provider>, // Add the comma here
     document.getElementById('root')
 );
